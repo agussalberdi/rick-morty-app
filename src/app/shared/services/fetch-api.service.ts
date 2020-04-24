@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from './../../../environments/environment';
-import { EndpointCharacters } from './../interfaces/endpoint-characters.interface';
+import { environment } from '@environments/environment';
+import { EndpointCharacters, EndpointEpisodes } from '@shared/interfaces/index';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class FetchApiService {
   }
 
   getEpisodes() {
-    return this.http.get(`${environment.api_url}/episode`);
+    return this.http.get<EndpointEpisodes>(`${environment.api_url}/episode`);
   }
 
   getLocations() {

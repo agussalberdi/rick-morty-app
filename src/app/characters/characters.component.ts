@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchApiService } from '@shared/services/fetch-api.service';
-import { EndpointCharacters } from '@shared/interfaces/endpoint-characters.interface';
+import { EndpointCharacters } from '@shared/interfaces/index';
 
 @Component({
   selector: 'app-characters',

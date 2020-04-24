@@ -1,0 +1,20 @@
+.character {
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(15, 14, 14, 0.726);
+    color: white;
+
+    &__card{
+        position: relative;
+        height: 300px;
+
+        &__name {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background: #1a1d1ac7;
+            text-align: center;
+        }
+    }
+}

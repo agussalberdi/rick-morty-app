@@ -1,0 +1,20 @@
+<div class="character">
+    <div class="character__card">
+        <img [src]="character.image" alt="Character Image" class="character__card__image">
+        <div class="character__card__name">
+            <h1>{{ character.name }}</h1>
+            <p>{{ character.id }} - {{ character.created }}</p>
+        </div>
+    </div>
+    <div class="character__details">
+        <div class="character__details__status">{{ character.status }}</div>
+        <hr>
+        <div class="character__details__species">{{ character.species }}</div>
+        <hr>
+        <div class="character__details__gender">{{ character.gender }}</div>
+        <hr>
+        <div class="character__details__origin">{{ character.origin.name }}</div>
+        <hr>
+        <div class="character__details__location">{{ character.location.name }}</div>
+    </div>
+</div>

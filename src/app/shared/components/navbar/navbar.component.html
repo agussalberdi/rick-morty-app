@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Rick & Morty App</span>
+      <div fxLayoutAlign="space-around center" class="nav">
+        <a *ngFor="let link of links" [routerLink]="link.path">{{ link.name }}</a>
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>

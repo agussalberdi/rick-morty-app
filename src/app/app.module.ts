@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { CharactersModule } from './characters/characters.module';
-import { ChaptersModule } from './chapters/chapters.module';
+import { EpisodesModule } from './episodes/episodes.module';
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +21,7 @@ import { AppComponent } from './app.component';
     SharedModule,
     DashboardModule,
     CharactersModule,
-    ChaptersModule
+    EpisodesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

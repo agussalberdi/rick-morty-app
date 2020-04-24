@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
   links = [
     { path: '/dashboard', name: 'Dashboard' },
     { path: '/characters', name: 'Characters' },
-    { path: '/chapters', name: 'Chapters' }
+    { path: '/episodes', name: 'Episodes' }
   ];
 
   constructor() {}

@@ -1,0 +1,3 @@
+<div *ngIf="episodes && episodes.results" class="episodes" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <app-episode *ngFor="let episode of episodes.results" [episode]="episode"></app-episode>
+</div>

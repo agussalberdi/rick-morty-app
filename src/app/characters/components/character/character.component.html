@@ -7,14 +7,29 @@
         </div>
     </div>
     <div class="character__details">
-        <div class="character__details__status">{{ character.status }}</div>
+        <div class="character__details__status" fxLayoutAlign="space-between center">
+            <span>STATUS</span>
+            <span class="attribute">{{ character.status }}</span>
+        </div>
         <hr>
-        <div class="character__details__species">{{ character.species }}</div>
+        <div class="character__details__species" fxLayoutAlign="space-between center">
+            <span>SPECIES</span>
+            <span class="attribute">{{ character.species }}</span>
+        </div>
         <hr>
-        <div class="character__details__gender">{{ character.gender }}</div>
+        <div class="character__details__gender" fxLayoutAlign="space-between center">
+            <span>GENDER</span>
+            <span class="attribute">{{ character.gender }}</span>
+        </div>
         <hr>
-        <div class="character__details__origin">{{ character.origin.name }}</div>
+        <div class="character__details__origin" fxLayoutAlign="space-between center">
+            <span>ORIGIN</span>
+            <span class="attribute">{{ character.origin.name }}</span>
+        </div>
         <hr>
-        <div class="character__details__location">{{ character.location.name }}</div>
+        <div class="character__details__location" fxLayoutAlign="space-between center">
+            <span>LAST LOCATION</span>
+            <span class="attribute">{{ character.location.name }}</span>
+        </div>
     </div>
 </div>

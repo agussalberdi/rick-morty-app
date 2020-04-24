@@ -15,7 +15,7 @@ export class CharactersComponent implements OnInit {
   ngOnInit() {
     this.fetchApiService.getCharacters().subscribe(characters => {
       console.log(characters);
-      // this.characters = characters.results;
+      this.characters = characters.results;
       // this.info = characters.info;
     });
   }

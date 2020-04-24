@@ -1,12 +1,18 @@
 .character {
-    width: 300px;
+    max-width: 300px;
+    margin: 10px;
     border-radius: 15px;
-    background-color: rgba(15, 14, 14, 0.726);
+    background-color: rgba(70, 67, 67, 0.5);
     color: white;
 
     &__card{
         position: relative;
+        width: 300px;
         height: 300px;
+
+        &__image {
+            border-radius: 15px;
+        }
 
         &__name {
             position: absolute;
@@ -15,6 +21,16 @@
             left: 0;
             background: #1a1d1ac7;
             text-align: center;
+        }
+    }
+
+    &__details {
+        padding: 20px;
+        font-size: smaller;
+
+        .attribute {
+            font-weight: 500;
+            color: darkorange;
         }
     }
 }

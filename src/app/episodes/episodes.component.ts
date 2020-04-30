@@ -1,6 +1,8 @@
+import { Episode } from './../shared/interfaces/episodes/episode.interface';
 import { Component, OnInit } from '@angular/core';
 import { FetchApiService } from '@shared/services/fetch-api.service';
-import { EndpointEpisodes } from '@shared/interfaces/index';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-episodes',
@@ -8,16 +10,14 @@ import { EndpointEpisodes } from '@shared/interfaces/index';
   styleUrls: ['./episodes.component.scss']
 })
 export class EpisodesComponent implements OnInit {
-  episodes: EndpointEpisodes;
+  episodes$: Observable<Episode[]>;
 
   constructor(private fetchApiService: FetchApiService) {}
 
   ngOnInit(): void {
-    this.fetchApiService.getEpisodes()
-      .subscribe(episodes => {
-        console.log(episodes);
-        this.episodes = episodes;
-      });
+    this.episodes$ = this.fetchApiService.getEpisodes().pipe(
+      map(episodes => episodes.results)
+    );
   }
 
 }

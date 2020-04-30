@@ -1,3 +1,3 @@
-<div *ngIf="characters && characters.results" class="characters" fxLayout="row wrap" fxLayoutAlign="space-around center">
-    <app-character *ngFor="let character of characters.results" [character]="character"></app-character>
+<div *ngIf="(characters$ | async) as characters" class="characters" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <app-character *ngFor="let character of characters" [character]="character"></app-character>
 </div>

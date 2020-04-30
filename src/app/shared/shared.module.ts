@@ -6,9 +6,10 @@ import { MaterialModule } from '@core/material.module';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
-    declarations: [NavbarComponent, SliderComponent],
+    declarations: [NavbarComponent, SliderComponent, FilterComponent],
     imports: [
         CommonModule,
         RouterModule,

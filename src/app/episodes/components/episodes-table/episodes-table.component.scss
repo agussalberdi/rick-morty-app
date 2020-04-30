@@ -1,0 +1,16 @@
+table {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+
+    td, th {
+        width: 25%;
+        vertical-align: middle;
+    }
+}
+
+mat-paginator {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}

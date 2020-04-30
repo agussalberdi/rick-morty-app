@@ -1,5 +1,9 @@
-table {
+%width {
     width: 90%;
+}
+
+table {
+    @extend %width;
     margin: 0 auto;
     margin-top: 15px;
 
@@ -10,7 +14,16 @@ table {
 }
 
 mat-paginator {
-    width: 90%;
+    @extend %width;
     margin: 0 auto;
     margin-bottom: 15px;
+}
+
+.no-data-message {
+    background-color: #424242;
+    @extend %width;
+    div {
+        padding: 14px;
+        padding-left: 24px;
+    }
 }

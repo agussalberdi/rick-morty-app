@@ -1,4 +1,4 @@
-<div *ngIf="dataSource" class="mat-elevation-z8">
+<div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource" matSort>
   
       <ng-container matColumnDef="episode">
@@ -8,7 +8,7 @@
   
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-        <td mat-cell *matCellDef="let episode"> {{episode.name}}% </td>
+        <td mat-cell *matCellDef="let episode"> {{episode.name}} </td>
       </ng-container>
   
       <ng-container matColumnDef="air_date">
@@ -25,6 +25,12 @@
       <tr mat-row *matRowDef="let episode; columns: displayedColumns;">
       </tr>
     </table>
+
+    <div [hidden]="dataSource.data?.length" class="no-data-message">
+      <div>
+        No results found !
+      </div>
+    </div>
   
-    <mat-paginator [length]="dataSource.data.length" [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+    <mat-paginator [length]="dataSource.data.length" [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
 </div>

@@ -16,7 +16,7 @@ import { FilterComponent } from './components/filter/filter.component';
         HttpClientModule,
         MaterialModule
     ],
-    exports: [NavbarComponent, SliderComponent],
+    exports: [NavbarComponent, SliderComponent, FilterComponent],
     providers: [],
 })
 export class SharedModule {}

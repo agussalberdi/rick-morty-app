@@ -14,6 +14,10 @@ export class FetchApiService {
     return this.http.get<EndpointCharacters>(`${environment.api_url}/character`);
   }
 
+  getMultipleCharactersByIds(ids: number[]) {
+    return this.http.get<EndpointCharacters>(`${environment.api_url}/character/${ids}`);
+  }
+
   getEpisodes() {
     return this.http.get<EndpointEpisodes>(`${environment.api_url}/episode`);
   }

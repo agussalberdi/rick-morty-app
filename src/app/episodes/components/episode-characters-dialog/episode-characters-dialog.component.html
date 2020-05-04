@@ -1,0 +1,9 @@
+<div mat-dialog-content>
+  <h1>Characters</h1>
+  <ng-container *ngFor="let item of data">
+      <p>{{ item.name }}</p>
+  </ng-container>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">CLOSE</button>
+</div>

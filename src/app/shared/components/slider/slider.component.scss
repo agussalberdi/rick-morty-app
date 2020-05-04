@@ -4,8 +4,14 @@
     margin-top: 30px;
     border-radius: 50px;
 
-    img {
-        width: 100%;
-        height: 100%;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }

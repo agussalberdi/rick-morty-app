@@ -20,6 +20,15 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Url </th>
         <td mat-cell *matCellDef="let episode"> {{episode.url}} </td>
       </ng-container>
+
+      <ng-container matColumnDef="characters">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Characters </th>
+        <td mat-cell *matCellDef="let episode">
+          <button mat-icon-button (click)="openDialog(episode.characters)">
+            <mat-icon>emoji_people</mat-icon>
+          </button>
+        </td>
+      </ng-container>
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let episode; columns: displayedColumns;">

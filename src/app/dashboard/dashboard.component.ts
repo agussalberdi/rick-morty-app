@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
@@ -6,13 +6,10 @@ import Swiper from 'swiper';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit, AfterViewInit {
+export class DashboardComponent implements AfterViewInit {
   mySwiper: Swiper;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   ngAfterViewInit() {
     this.mySwiper = new Swiper('.swiper-container', {

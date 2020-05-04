@@ -1,4 +1,3 @@
-import { environment } from './../../../../environments/environment.prod';
 import { Component, OnInit, OnChanges, SimpleChanges, ViewChild, Input, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -7,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { EpisodeCharactersDialogComponent } from './../episode-characters-dialog/episode-characters-dialog.component';
 import { Episode } from '@shared/interfaces/index';
-import { FetchApiService } from '@shared/services/fetch-api.service';
+import { FetchApiService } from '@core/services/fetch-api.service';
 
 @Component({
   selector: 'app-episodes-table',

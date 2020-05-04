@@ -1,6 +1,6 @@
 import { Episode } from './../shared/interfaces/episodes/episode.interface';
 import { Component, OnInit } from '@angular/core';
-import { FetchApiService } from '@shared/services/fetch-api.service';
+import { FetchApiService } from '@core/services/fetch-api.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

@@ -7,16 +7,17 @@ import { MaterialModule } from '@core/material.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
-    declarations: [NavbarComponent, SliderComponent, FilterComponent],
+    declarations: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent],
     imports: [
         CommonModule,
         RouterModule,
         HttpClientModule,
         MaterialModule
     ],
-    exports: [NavbarComponent, SliderComponent, FilterComponent],
+    exports: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent],
     providers: [],
 })
 export class SharedModule {}

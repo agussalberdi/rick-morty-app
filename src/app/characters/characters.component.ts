@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FetchApiService } from '@shared/services/fetch-api.service';
+import { FetchApiService } from '@core/services/fetch-api.service';
 import { Character } from '@shared/interfaces/index';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';

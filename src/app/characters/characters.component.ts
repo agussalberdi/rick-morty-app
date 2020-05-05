@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchApiService } from '@core/services/fetch-api.service';
 import { Character } from '@shared/interfaces/index';
-import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -10,14 +9,26 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit {
-  characters$: Observable<Character[]>;
+  characters: Character[];
+  filteredCharacters: Character[];
 
   constructor(private fetchApiService: FetchApiService) {}
 
   ngOnInit() {
-    this.characters$ = this.fetchApiService.getCharacters().pipe(
-      map(characters => characters.results)
-    );
+    this.fetchCharacters();
+  }
+
+  private fetchCharacters() {
+    this.fetchApiService.getCharacters().pipe(
+      map(data => data.results)
+    ).subscribe(characters => {
+      this.characters = characters;
+      this.filteredCharacters = characters;
+    });
+  }
+
+  handleFilter(event: Character[]) {
+    this.filteredCharacters = event;
   }
 
 }

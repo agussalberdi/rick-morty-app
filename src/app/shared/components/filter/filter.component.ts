@@ -18,7 +18,10 @@ export class FilterComponent implements OnInit {
   onChange(event: string) {
     if (event.length > 2) {
         const filtered = this.data.filter(item =>
-            item.name.toLowerCase().includes(event.toLowerCase())
+            item.name.toLowerCase().includes(event.toLowerCase()) ||
+            item.status.toLowerCase().includes(event.toLowerCase()) ||
+            item.species.toLowerCase().includes(event.toLowerCase()) ||
+            item.gender.toLowerCase().includes(event.toLowerCase())
         );
         this.filteredData.emit(filtered);
     } else {

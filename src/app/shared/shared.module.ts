@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '@core/material.module';
 
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -15,6 +16,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
         CommonModule,
         RouterModule,
         HttpClientModule,
+        FormsModule,
         MaterialModule
     ],
     exports: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent],

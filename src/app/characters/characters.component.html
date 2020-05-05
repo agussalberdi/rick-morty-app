@@ -1,3 +1,6 @@
-<div *ngIf="(characters$ | async) as characters" class="characters" fxLayout="row wrap" fxLayoutAlign="space-around center">
-    <app-character *ngFor="let character of characters" [character]="character"></app-character>
+<div fxLayout="column" fxLayoutAlign="center center">
+    <app-filter [data]="characters" (filteredData)="handleFilter($event)"></app-filter>
+    <div class="characters" fxLayout="row wrap" fxLayoutAlign="space-around center">
+        <app-character *ngFor="let character of filteredCharacters" [character]="character"></app-character>
+    </div>
 </div>

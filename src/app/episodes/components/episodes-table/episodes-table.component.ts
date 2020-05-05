@@ -20,7 +20,7 @@ export class EpisodesTableComponent implements OnInit, OnChanges {
   @Input() episodes: Episode[];
 
   dataSource: MatTableDataSource<Episode>;
-  displayedColumns: string[] = ['episode', 'name', 'air_date', 'url', 'characters'];
+  displayedColumns: string[] = ['episode', 'name', 'created', 'air_date', 'characters'];
 
   constructor(private cd: ChangeDetectorRef, public dialog: MatDialog, private fetchApiService: FetchApiService) {
     this.dataSource = new MatTableDataSource(this.episodes);

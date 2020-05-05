@@ -11,14 +11,14 @@
         <td mat-cell *matCellDef="let episode"> {{episode.name}} </td>
       </ng-container>
   
+      <ng-container matColumnDef="created">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Created </th>
+        <td mat-cell *matCellDef="let episode"> {{episode.created | date: 'MMMM dd, yyyy' }} </td>
+      </ng-container>
+
       <ng-container matColumnDef="air_date">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Air Date </th>
-        <td mat-cell *matCellDef="let episode"> {{episode.air_date}} </td>
-      </ng-container>
-  
-      <ng-container matColumnDef="url">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Url </th>
-        <td mat-cell *matCellDef="let episode"> {{episode.url}} </td>
+        <td mat-cell *matCellDef="let episode"> {{episode.air_date | date: 'MMMM dd, yyyy' }} </td>
       </ng-container>
 
       <ng-container matColumnDef="characters">

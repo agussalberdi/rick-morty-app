@@ -1,9 +1,11 @@
+<h1 mat-dialog-title>Characters</h1>
 <div mat-dialog-content>
-  <h1>Characters</h1>
-  <ng-container *ngFor="let item of data">
-      <p>{{ item.name }}</p>
-  </ng-container>
+  <mat-chip-list>
+    <mat-chip *ngFor="let item of data">
+      {{item.name}}
+    </mat-chip>
+  </mat-chip-list>
 </div>
 <div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">CLOSE</button>
+  <button mat-raised-button (click)="onNoClick()" color="accent">BACK</button>
 </div>

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
@@ -15,7 +14,6 @@ import { MatChipsModule } from '@angular/material/chips';
 @NgModule({
     declarations: [],
     imports: [
-        CommonModule,
         FlexLayoutModule,
         MatToolbarModule,
         MatTableModule,

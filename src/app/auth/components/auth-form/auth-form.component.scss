@@ -22,6 +22,11 @@
   width: 400px;
   margin: 50px auto;
   padding: 30px;
+
+  mat-form-field {
+    width: 80%;
+  }
+
   &__action {
     margin: 10px 0 30px;
   }

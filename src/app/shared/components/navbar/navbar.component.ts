@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AuthService } from '@core/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,9 +14,13 @@ export class NavbarComponent implements OnInit {
     { path: '/episodes', name: 'Episodes' }
   ];
 
-  constructor() {}
+  constructor(public af: AngularFireAuth, private authService: AuthService) {}
 
   ngOnInit(): void {
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
 }

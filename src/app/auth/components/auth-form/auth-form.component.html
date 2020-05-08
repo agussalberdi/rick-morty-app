@@ -1,0 +1,30 @@
+<div class="auth-form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ng-content select="h1"></ng-content>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="Email address" formControlName="email" required>
+            <mat-error *ngIf="emailFormat">Invalid email format</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            <mat-error *ngIf="passwordInvalid">Password is required</mat-error>
+        </mat-form-field>
+
+        <ng-content select=".error"></ng-content>
+
+        <div class="auth-form__action">
+            <ng-content select="button"></ng-content>
+        </div>
+        
+        <div class="auth-form__toggle">
+            <ng-content select="a"></ng-content>
+        </div>
+    </form>
+</div>

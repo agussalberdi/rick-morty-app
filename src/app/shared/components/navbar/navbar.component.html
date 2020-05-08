@@ -4,5 +4,8 @@
       <div fxLayoutAlign="space-around center" class="nav">
         <a *ngFor="let link of links" [routerLink]="link.path">{{ link.name }}</a>
       </div>
+      <button mat-icon-button *ngIf="af.authState | async" (click)="logout()">
+        <mat-icon>power_settings_new</mat-icon>
+      </button>
     </mat-toolbar-row>
 </mat-toolbar>

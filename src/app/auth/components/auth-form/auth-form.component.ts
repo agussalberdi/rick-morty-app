@@ -21,7 +21,7 @@ export class AuthFormComponent implements OnInit {
     this.form = this.fb.group({
       email: ['', Validators.email],
       password: ['', Validators.required]
-  });
+    });
   }
 
   onSubmit() {

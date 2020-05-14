@@ -1,4 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+
+import { FetchApiService } from '@core/services/fetch-api.service';
 
 import { EpisodesComponent } from './episodes.component';
 
@@ -8,7 +11,11 @@ describe('EpisodesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EpisodesComponent ]
+      imports: [
+        HttpClientModule
+      ],
+      declarations: [ EpisodesComponent ],
+      providers: [ FetchApiService ]
     })
     .compileComponents();
   }));

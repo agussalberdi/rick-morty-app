@@ -10,6 +10,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
     declarations: [],
@@ -24,7 +25,8 @@ import { MatChipsModule } from '@angular/material/chips';
         MatDialogModule,
         MatFormFieldModule,
         MatInputModule,
-        MatChipsModule
+        MatChipsModule,
+        MatMenuModule
     ],
     exports: [
         FlexLayoutModule,
@@ -37,7 +39,8 @@ import { MatChipsModule } from '@angular/material/chips';
         MatDialogModule,
         MatFormFieldModule,
         MatInputModule,
-        MatChipsModule
+        MatChipsModule,
+        MatMenuModule
     ],
     providers: [],
 })

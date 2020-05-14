@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   links = [
-    { path: '/dashboard', name: 'Dashboard' },
-    { path: '/characters', name: 'Characters' },
-    { path: '/episodes', name: 'Episodes' }
+    { path: '/dashboard', name: 'Dashboard', icon: 'home' },
+    { path: '/characters', name: 'Characters', icon: 'face' },
+    { path: '/episodes', name: 'Episodes', icon: 'tv' }
   ];
 
   constructor(public af: AngularFireAuth, private authService: AuthService, private router: Router) {}

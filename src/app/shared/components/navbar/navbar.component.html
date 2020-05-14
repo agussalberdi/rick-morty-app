@@ -1,9 +1,19 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+      <div>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu Button">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <div fxLayout="column" fxLayoutAlign="center start" class="menu">
+            <a *ngFor="let link of links" [routerLink]="link.path" class="menu__link">
+              {{ link.name }}
+              <mat-icon class="menu__link__icon">{{ link.icon }}</mat-icon>
+            </a>
+          </div>
+        </mat-menu>
+      </div>    
       <span>Rick & Morty App</span>
-      <div fxLayoutAlign="space-around center" class="nav">
-        <a *ngFor="let link of links" [routerLink]="link.path">{{ link.name }}</a>
-      </div>
       <button mat-icon-button *ngIf="af.authState | async" (click)="logout()">
         <mat-icon>power_settings_new</mat-icon>
       </button>

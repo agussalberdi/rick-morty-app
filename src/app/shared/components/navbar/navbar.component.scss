@@ -1,9 +1,12 @@
-.nav {
-    width: 100%;
-    margin-left: 20px;
-
-    a {
+.menu {
+    margin: 10px 20px;
+    &__link {
         text-decoration: none;
-        color: inherit;
+        color: white;
+        padding: 10px 0;
+
+        &__icon {
+            vertical-align: middle;
+        }
     }
 }

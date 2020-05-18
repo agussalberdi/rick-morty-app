@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Used Technologies
+
+-Angular 9
+
+-RxJs
+
+-Angular Material
+
+-Angular FxLayout
+
+-Angular CLI
+
+-Webpack
+
+-Karma
+
+-Jasmine
+
+-Typescript
+
+-Firebase authentification and data management

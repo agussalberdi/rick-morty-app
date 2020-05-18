@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class AuthFormComponent implements OnInit {
   @Output() submitted = new EventEmitter<FormGroup>();
   form: FormGroup;
-  hide = false;
+  hide = true;
 
   constructor(private fb: FormBuilder) {}
 

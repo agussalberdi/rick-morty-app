@@ -1,3 +1,10 @@
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .menu {
     margin: 10px 20px;
     &__link {

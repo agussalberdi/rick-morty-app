@@ -22,6 +22,11 @@ const routes: Routes = [
     path: 'episodes',
     loadChildren: () => import('./episodes/episodes.module').then(m => m.EpisodesModule),
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'locations',
+    loadChildren: () => import('./locations/locations.module').then(m => m.LocationsModule),
+    canActivate: [AuthGuard]
   }
 ];
 

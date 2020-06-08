@@ -13,6 +13,8 @@ import { AuthModule } from './auth/auth.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { CharactersModule } from './characters/characters.module';
 import { EpisodesModule } from './episodes/episodes.module';
+import { LocationsModule } from './locations/locations.module';
+
 import { environment } from '@environments/environment';
 import { MyHttpInterceptor } from './core/http.interceptor';
 
@@ -36,7 +38,8 @@ import { AppComponent } from './app.component';
     AuthModule,
     DashboardModule,
     CharactersModule,
-    EpisodesModule
+    EpisodesModule,
+    LocationsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true }

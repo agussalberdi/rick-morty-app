@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '@environments/environment';
-import { EndpointCharacters, EndpointEpisodes } from '@shared/interfaces/index';
+import { EndpointCharacters, EndpointEpisodes, EndpointLocations } from '@shared/interfaces/index';
 
 /**
  * @desc This service allow us to retrieve data from an external API.
@@ -38,6 +38,6 @@ export class FetchApiService {
    * @desc Method for retrieving all the locations.
    */
   getLocations() {
-    return this.http.get(`${environment.api_url}/location`);
+    return this.http.get<EndpointLocations>(`${environment.api_url}/location`);
   }
 }

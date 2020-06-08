@@ -20,7 +20,12 @@ export class DashboardComponent implements AfterViewInit {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }
+        },
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        centeredSlides: true
     });
   }
 }

@@ -25,7 +25,7 @@
     </mat-step>
     <mat-step>
         <div class="data">
-            Created: {{ location.created }}
+            Created: {{ location.created | date: 'MMMM dd, yyyy' }}
         </div>
         <div>
             <button mat-stroked-button color="primary" matStepperPrevious>Back</button>

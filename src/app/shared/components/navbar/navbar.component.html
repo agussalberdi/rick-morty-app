@@ -6,7 +6,7 @@
         </button>
         <mat-menu #menu="matMenu">
           <div fxLayout="column" fxLayoutAlign="center start" class="menu">
-            <a *ngFor="let link of links" [routerLink]="link.path" class="menu__link">
+            <a *ngFor="let link of links" [routerLink]="link.path" fxLayoutAlign="space-between center" class="menu__link">
               {{ link.name }}
               <mat-icon class="menu__link__icon">{{ link.icon }}</mat-icon>
             </a>

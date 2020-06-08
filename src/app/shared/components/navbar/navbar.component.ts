@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
     { path: '/dashboard', name: 'Dashboard', icon: 'home' },
     { path: '/characters', name: 'Characters', icon: 'face' },
     { path: '/episodes', name: 'Episodes', icon: 'tv' },
-    { path: '/locations', name: 'Episodes', icon: 'place' }
+    { path: '/locations', name: 'Locations', icon: 'place' }
   ];
 
   constructor(public af: AngularFireAuth, private authService: AuthService, private router: Router) {}

@@ -46,4 +46,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 -Typescript
 
--Firebase authentification and data management
+-Firebase authentification
+
+## Hosted application
+
+Url: https://rick-morty-angular.netlify.app/

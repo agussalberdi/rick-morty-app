@@ -11,6 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
     declarations: [],
@@ -26,7 +27,8 @@ import { MatMenuModule } from '@angular/material/menu';
         MatFormFieldModule,
         MatInputModule,
         MatChipsModule,
-        MatMenuModule
+        MatMenuModule,
+        MatStepperModule
     ],
     exports: [
         FlexLayoutModule,
@@ -40,7 +42,8 @@ import { MatMenuModule } from '@angular/material/menu';
         MatFormFieldModule,
         MatInputModule,
         MatChipsModule,
-        MatMenuModule
+        MatMenuModule,
+        MatStepperModule
     ],
     providers: [],
 })

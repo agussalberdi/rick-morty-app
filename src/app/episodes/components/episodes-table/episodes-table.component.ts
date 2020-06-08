@@ -6,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { EpisodeCharactersDialogComponent } from './../episode-characters-dialog/episode-characters-dialog.component';
 import { Episode } from '@shared/interfaces/index';
-import { FetchApiService } from '@core/services/fetch-api.service';
+import { FetchApiService } from '@core/services/index';
 
 @Component({
   selector: 'app-episodes-table',
@@ -22,7 +22,11 @@ export class EpisodesTableComponent implements OnInit, OnChanges {
   dataSource: MatTableDataSource<Episode>;
   displayedColumns: string[] = ['episode', 'name', 'created', 'air_date', 'characters'];
 
-  constructor(private cd: ChangeDetectorRef, public dialog: MatDialog, private fetchApiService: FetchApiService) {
+  constructor(
+    private cd: ChangeDetectorRef,
+    public dialog: MatDialog,
+    private fetchApiService: FetchApiService
+  ) {
     this.dataSource = new MatTableDataSource(this.episodes);
   }
 

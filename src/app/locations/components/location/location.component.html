@@ -1,35 +1,36 @@
 <mat-horizontal-stepper #stepper>
-    <mat-step>
-        <div class="data">Name: {{ location.name }}</div>
+    <mat-step label="Name">
+        <div class="data">{{ location.name }}</div>
         <div>
           <button mat-stroked-button color="primary" matStepperNext>Next</button>
         </div>
     </mat-step>
-    <mat-step>
+    <mat-step label="Type">
         <div class="data">
-            Type: {{ location.type }}
-        </div>
-        <div>
-          <button mat-stroked-button color="primary" matStepperPrevious>Back</button>
-          <button mat-stroked-button color="primary" matStepperNext>Next</button>
-        </div>
-    </mat-step>
-    <mat-step>
-        <div class="data">
-            Dimension: {{ location.dimension }}
+            {{ location.type }}
         </div>
         <div>
           <button mat-stroked-button color="primary" matStepperPrevious>Back</button>
           <button mat-stroked-button color="primary" matStepperNext>Next</button>
         </div>
     </mat-step>
-    <mat-step>
+    <mat-step label="Dimension">
         <div class="data">
-            Created: {{ location.created | date: 'MMMM dd, yyyy' }}
+            {{ location.dimension }}
+        </div>
+        <div>
+          <button mat-stroked-button color="primary" matStepperPrevious>Back</button>
+          <button mat-stroked-button color="primary" matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step label="Creation Date">
+        <div class="data">
+            {{ location.created | date: 'MMMM dd, yyyy' }}
         </div>
         <div>
             <button mat-stroked-button color="primary" matStepperPrevious>Back</button>
         </div>
     </mat-step>
 </mat-horizontal-stepper>
+<hr>
   

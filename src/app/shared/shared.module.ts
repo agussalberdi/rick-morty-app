@@ -9,9 +9,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-    declarations: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent],
+    declarations: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent, FooterComponent],
     imports: [
         CommonModule,
         RouterModule,
@@ -19,7 +20,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
         FormsModule,
         MaterialModule
     ],
-    exports: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent],
+    exports: [NavbarComponent, SliderComponent, FilterComponent, SpinnerComponent, FooterComponent],
     providers: [],
 })
 export class SharedModule {}

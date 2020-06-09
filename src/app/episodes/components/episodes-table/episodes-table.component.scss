@@ -2,6 +2,13 @@
     width: 100%;
 }
 
+h3 {
+    color: white;
+    font-style: italic;
+    margin: 10px 0;
+    text-align: center;
+}
+
 table {
     @extend %width;
     margin: 0 auto;

@@ -51,3 +51,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Hosted application
 
 Url: https://rick-morty-angular.netlify.app/
+
+## How it looks?
+
+<img width="1470" alt="Screenshot 2024-01-10 at 13 26 00" src="https://github.com/agussalberdi/angular-rick-morty/assets/43733257/74ea66ae-43f6-4f5d-8a60-b2d874769f67">
+<img width="1470" alt="Screenshot 2024-01-10 at 13 26 31" src="https://github.com/agussalberdi/angular-rick-morty/assets/43733257/5bb09e32-9d98-4592-bc13-a53e4b06ed78">
+<img width="1470" alt="Screenshot 2024-01-10 at 13 27 19" src="https://github.com/agussalberdi/angular-rick-morty/assets/43733257/651c1b1d-019f-41c3-8c74-5e750bd06200">
+<img width="1470" alt="Screenshot 2024-01-10 at 13 28 15" src="https://github.com/agussalberdi/angular-rick-morty/assets/43733257/180f23b8-fa65-4302-a9f8-7ca6e65fed00">
+
+
